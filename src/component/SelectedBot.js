@@ -1,9 +1,9 @@
 import React from 'react'
 
-function SelectedBot({bot}) {
+function SelectedBot({bot, handleDelete}) {
     const {name, health, damage, armor, bot_class, catchphrase, avatar_url, created_at, updated_at } = bot
   return (
-    <div>
+    <div onClick={() => handleDelete(bot)}>
         <div>
             <h2>{name}</h2>
             <img src={avatar_url} alt='bot avatar' />
