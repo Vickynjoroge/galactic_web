@@ -38,7 +38,7 @@ function BotContainer() {
   return (
     <div>
       <YourBotArmy myBots={myBots} handleDelete={handleDelete}/>
-      <BotCollectionlist bots={bots} handleBotclick= {handleBotclick} />
+      <BotCollectionlist bots={bots} setBots={setBots} handleBotclick= {handleBotclick} />
       
     </div>
   )
