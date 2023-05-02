@@ -2,9 +2,9 @@ import React from 'react'
 import BotCollection from './BotCollection'
 import '../componentCSS/BotCollectionList.css'
 
-function BotCollectionlist({bots}) {
+function BotCollectionlist({bots, handleBotclick}) {
   return (
-    <div className='botCollection'>
+    <div className='botCollection' onClick={()=> handleBotclick}>
         {bots.map((bot) => (
             <BotCollection 
             key={bot.id}
