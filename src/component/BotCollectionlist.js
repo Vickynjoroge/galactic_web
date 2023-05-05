@@ -4,7 +4,7 @@ import '../componentCSS/BotCollectionList.css'
 
 function BotCollectionlist({bots, handleBotclick}) {
   return (
-    <div className='botCollection' onClick={()=> handleBotclick}>
+    <div className='botCollection' onClick={(e)=> handleBotclick(e)}>
         {bots.map((bot) => (
             <BotCollection 
             key={bot.id}
